@@ -22,17 +22,16 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/textView43"
-                android:layout_width="40dp"
+                android:id="@+id/tvProj"
+                android:layout_width="wrap_content"
                 android:layout_height="16dp"
                 android:layout_marginBottom="16dp"
                 android:text="-/-"
                 android:textAlignment="center"
-                app:layout_constraintBottom_toTopOf="@+id/textView47"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.442"
+                app:layout_constraintBottom_toTopOf="@+id/tvMid_1"
                 app:layout_constraintStart_toEndOf="@+id/textView38"
-                app:layout_constraintTop_toBottomOf="@+id/textView42" />
+                app:layout_constraintStart_toStartOf="@+id/tvMid_1"
+                app:layout_constraintTop_toBottomOf="@+id/tvAss" />
 
             <TextView
                 android:id="@+id/textView32"
@@ -74,7 +73,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView38" />
 
             <TextView
-                android:id="@+id/textView29"
+                android:id="@+id/tvRoll"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="-"
@@ -84,17 +83,17 @@
                 app:layout_constraintStart_toEndOf="@+id/textView28" />
 
             <TextView
-                android:id="@+id/textView45"
-                android:layout_width="40dp"
-                android:layout_height="wrap_content"
+                android:id="@+id/tvMid_2"
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
                 android:layout_marginBottom="16dp"
                 android:text="-/-"
                 android:textAlignment="center"
-                app:layout_constraintBottom_toTopOf="@+id/textView48"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.38"
+                app:layout_constraintBottom_toTopOf="@+id/tvFinal"
                 app:layout_constraintStart_toEndOf="@+id/textView40"
-                app:layout_constraintTop_toBottomOf="@+id/textView47" />
+                app:layout_constraintStart_toStartOf="@+id/tvFinal"
+                app:layout_constraintTop_toBottomOf="@+id/tvMid_1"
+                app:layout_constraintVertical_bias="0.944" />
 
             <TextView
                 android:id="@+id/textView30"
@@ -102,7 +101,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="102dp"
                 android:text="Batch: "
-                app:layout_constraintEnd_toStartOf="@+id/textView31"
+                app:layout_constraintEnd_toStartOf="@+id/tvBatch"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintHorizontal_chainStyle="packed"
                 app:layout_constraintStart_toStartOf="parent"
@@ -121,7 +120,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView33" />
 
             <TextView
-                android:id="@+id/textView27"
+                android:id="@+id/tvName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="-"
@@ -131,17 +130,16 @@
                 app:layout_constraintStart_toEndOf="@+id/textView16" />
 
             <TextView
-                android:id="@+id/textView47"
-                android:layout_width="40dp"
-                android:layout_height="wrap_content"
+                android:id="@+id/tvMid_1"
+                android:layout_width="wrap_content"
+                android:layout_height="17dp"
                 android:layout_marginBottom="16dp"
                 android:text="-/-"
                 android:textAlignment="center"
-                app:layout_constraintBottom_toTopOf="@+id/textView45"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.39"
+                app:layout_constraintBottom_toTopOf="@+id/tvMid_2"
                 app:layout_constraintStart_toEndOf="@+id/textView39"
-                app:layout_constraintTop_toBottomOf="@+id/textView43" />
+                app:layout_constraintStart_toStartOf="@+id/tvMid_2"
+                app:layout_constraintTop_toBottomOf="@+id/tvProj" />
 
             <TextView
                 android:id="@+id/textView41"
@@ -149,22 +147,21 @@
                 android:layout_height="wrap_content"
                 android:text="Final: "
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/textView48"
+                app:layout_constraintEnd_toStartOf="@+id/tvFinal"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView40" />
 
             <TextView
-                android:id="@+id/textView48"
-                android:layout_width="40dp"
-                android:layout_height="20dp"
+                android:id="@+id/tvFinal"
+                android:layout_width="wrap_content"
+                android:layout_height="17dp"
+                android:layout_marginEnd="8dp"
                 android:text="-/-"
                 android:textAlignment="center"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/textView41"
-                app:layout_constraintTop_toBottomOf="@+id/textView45" />
+                app:layout_constraintEnd_toEndOf="@+id/tvWeightLink"
+                app:layout_constraintTop_toBottomOf="@+id/tvMid_2" />
 
             <TextView
                 android:id="@+id/tvAssLink"
@@ -199,7 +196,7 @@
                 android:layout_marginBottom="8dp"
                 android:text="Roll Number: "
                 app:layout_constraintBottom_toTopOf="@+id/textView30"
-                app:layout_constraintEnd_toStartOf="@+id/textView29"
+                app:layout_constraintEnd_toStartOf="@+id/tvRoll"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintHorizontal_chainStyle="packed"
                 app:layout_constraintStart_toStartOf="parent"
@@ -237,24 +234,23 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="36dp"
                 android:text="Student Name: "
-                app:layout_constraintEnd_toStartOf="@+id/textView27"
+                app:layout_constraintEnd_toStartOf="@+id/tvName"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintHorizontal_chainStyle="packed"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView42"
-                android:layout_width="40dp"
-                android:layout_height="wrap_content"
+                android:id="@+id/tvAss"
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="16dp"
                 android:text="-/-"
                 android:textAlignment="center"
-                app:layout_constraintBottom_toTopOf="@+id/textView43"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.349"
+                app:layout_constraintBottom_toTopOf="@+id/tvProj"
                 app:layout_constraintStart_toEndOf="@+id/textView37"
+                app:layout_constraintStart_toStartOf="@+id/tvProj"
                 app:layout_constraintTop_toBottomOf="@+id/tvWeightLink"
                 app:layout_constraintVertical_bias="0.96" />
 
@@ -269,7 +265,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView37" />
 
             <TextView
-                android:id="@+id/textView31"
+                android:id="@+id/tvBatch"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="-"
@@ -280,4 +276,11 @@
                 app:layout_constraintStart_toEndOf="@+id/textView30" />
         </android.support.constraint.ConstraintLayout>
     </ScrollView>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="274dp" />
 </android.support.constraint.ConstraintLayout>

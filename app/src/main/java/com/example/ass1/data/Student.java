@@ -21,6 +21,7 @@ public class Student implements Serializable {
         this.name = name;
         this.rollNum = rollNum;
         this.batch = batch;
+        this.course = new Course();
     }
 
     public void setCourse(Course course) {

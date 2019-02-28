@@ -50,10 +50,13 @@ public class LogIn extends AppCompatActivity {
 
         if(getIntent().hasExtra("new")) {
             Bundle b = this.getIntent().getExtras();
+
+
             String u =((Student)b.getSerializable("new")).getUsername() ;
             String p =((Student)b.getSerializable("new")).getPassword() ;
             etUser.setText(u);
             etPass.setText(p);
+            current = u;
         }
         if(getIntent().hasExtra("data")) {
             Bundle b = this.getIntent().getExtras();
@@ -84,16 +87,29 @@ public class LogIn extends AppCompatActivity {
 
         if(studentKey.contains(etUser))     {
 
-            Intent i = new Intent(getApplicationContext(), StudentHome.class);
+
             Student s = data.get(etUser);
-            i.putExtra ("current", (Serializable) s);
-            startActivity(i);
-        }
-        else    {
+            if(s.getPassword().equals(etPass)) {
+                Intent j = new Intent(getApplicationContext(), StudentHome.class);
 
-            Toast.makeText(this,"User does not exist",Toast.LENGTH_SHORT).show();
+
+                // Transferring data to summary activity
+                j.putExtra("current", current);
+                j.putExtra("data", data);
+                j.putExtra("studentKey", studentKey);
+
+                startActivity(j);
+            }
+            else {
+
+                Toast.makeText(this,"Incorrect Password",Toast.LENGTH_SHORT).show();
+            }
 
         }
+        else {
+            Toast.makeText(this,"Student not found",Toast.LENGTH_SHORT).show();
+        }
+
 
 
     }

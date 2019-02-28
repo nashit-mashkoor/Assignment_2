@@ -15,8 +15,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Assignment 1"
-            app:layout_constraintBaseline_toBaselineOf="@+id/editText9"
-            app:layout_constraintEnd_toStartOf="@+id/editText9"
+            app:layout_constraintBaseline_toBaselineOf="@+id/etGAss1"
+            app:layout_constraintEnd_toStartOf="@+id/etGAss1"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent" />
 
@@ -37,8 +37,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Assignment 2"
-            app:layout_constraintBaseline_toBaselineOf="@+id/editText10"
-            app:layout_constraintEnd_toStartOf="@+id/editText10"
+            app:layout_constraintBaseline_toBaselineOf="@+id/etGAss2"
+            app:layout_constraintEnd_toStartOf="@+id/etGAss2"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintHorizontal_chainStyle="spread"
             app:layout_constraintStart_toStartOf="parent" />
@@ -48,8 +48,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Assignment 3"
-            app:layout_constraintBaseline_toBaselineOf="@+id/editText11"
-            app:layout_constraintEnd_toStartOf="@+id/editText11"
+            app:layout_constraintBaseline_toBaselineOf="@+id/etGAss3"
+            app:layout_constraintEnd_toStartOf="@+id/etGAss3"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent" />
 
@@ -58,8 +58,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Project"
-            app:layout_constraintBaseline_toBaselineOf="@+id/editText12"
-            app:layout_constraintEnd_toStartOf="@+id/editText12"
+            app:layout_constraintBaseline_toBaselineOf="@+id/etGProj"
+            app:layout_constraintEnd_toStartOf="@+id/etGProj"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent" />
 
@@ -68,8 +68,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Mid Term 1"
-            app:layout_constraintBaseline_toBaselineOf="@+id/editText17"
-            app:layout_constraintEnd_toStartOf="@+id/editText17"
+            app:layout_constraintBaseline_toBaselineOf="@+id/etGMid_1"
+            app:layout_constraintEnd_toStartOf="@+id/etGMid_1"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent" />
 
@@ -78,8 +78,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Mid Term 2"
-            app:layout_constraintBaseline_toBaselineOf="@+id/editText19"
-            app:layout_constraintEnd_toStartOf="@+id/editText19"
+            app:layout_constraintBaseline_toBaselineOf="@+id/etGMid_2"
+            app:layout_constraintEnd_toStartOf="@+id/etGMid_2"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent" />
 
@@ -88,8 +88,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Final"
-            app:layout_constraintBaseline_toBaselineOf="@+id/editText21"
-            app:layout_constraintEnd_toStartOf="@+id/editText21"
+            app:layout_constraintBaseline_toBaselineOf="@+id/etGFinal"
+            app:layout_constraintEnd_toStartOf="@+id/etGFinal"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent" />
 
@@ -99,9 +99,9 @@
             android:layout_height="@dimen/height"
             android:text="out of"
             app:layout_constraintBottom_toTopOf="@+id/textView21"
-            app:layout_constraintEnd_toStartOf="@+id/editText13"
+            app:layout_constraintEnd_toStartOf="@+id/etTAss1"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/editText9"
+            app:layout_constraintStart_toEndOf="@+id/etGAss1"
             app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
         <TextView
@@ -110,9 +110,9 @@
             android:layout_height="@dimen/height"
             android:text="out of"
             app:layout_constraintBottom_toTopOf="@+id/textView22"
-            app:layout_constraintEnd_toStartOf="@+id/editText14"
+            app:layout_constraintEnd_toStartOf="@+id/etTAss2"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/editText10"
+            app:layout_constraintStart_toEndOf="@+id/etGAss2"
             app:layout_constraintTop_toBottomOf="@+id/textView20" />
 
         <TextView
@@ -121,9 +121,9 @@
             android:layout_height="@dimen/height"
             android:text="out of"
             app:layout_constraintBottom_toTopOf="@+id/textView23"
-            app:layout_constraintEnd_toStartOf="@+id/editText15"
+            app:layout_constraintEnd_toStartOf="@+id/etTAss3"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/editText11"
+            app:layout_constraintStart_toEndOf="@+id/etGAss3"
             app:layout_constraintTop_toBottomOf="@+id/textView21" />
 
         <TextView
@@ -132,9 +132,9 @@
             android:layout_height="@dimen/height"
             android:text="out of"
             app:layout_constraintBottom_toTopOf="@+id/textView24"
-            app:layout_constraintEnd_toStartOf="@+id/editText16"
+            app:layout_constraintEnd_toStartOf="@+id/etTProj"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/editText12"
+            app:layout_constraintStart_toEndOf="@+id/etGProj"
             app:layout_constraintTop_toBottomOf="@+id/textView22" />
 
         <TextView
@@ -143,9 +143,9 @@
             android:layout_height="@dimen/height"
             android:text="out of"
             app:layout_constraintBottom_toTopOf="@+id/textView25"
-            app:layout_constraintEnd_toStartOf="@+id/editText18"
+            app:layout_constraintEnd_toStartOf="@+id/etTMid_1"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/editText17"
+            app:layout_constraintStart_toEndOf="@+id/etGMid_1"
             app:layout_constraintTop_toBottomOf="@+id/textView23" />
 
         <TextView
@@ -154,9 +154,9 @@
             android:layout_height="@dimen/height"
             android:text="out of"
             app:layout_constraintBottom_toTopOf="@+id/textView26"
-            app:layout_constraintEnd_toStartOf="@+id/editText20"
+            app:layout_constraintEnd_toStartOf="@+id/etTMid_2"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/editText19"
+            app:layout_constraintStart_toEndOf="@+id/etGMid_2"
             app:layout_constraintTop_toBottomOf="@+id/textView24" />
 
         <TextView
@@ -165,13 +165,13 @@
             android:layout_height="@dimen/height"
             android:text="out of"
             app:layout_constraintBottom_toTopOf="@+id/btUpdate"
-            app:layout_constraintEnd_toStartOf="@+id/editText22"
+            app:layout_constraintEnd_toStartOf="@+id/etTFinal"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/editText21"
+            app:layout_constraintStart_toEndOf="@+id/etGFinal"
             app:layout_constraintTop_toBottomOf="@+id/textView25" />
 
         <EditText
-            android:id="@+id/editText9"
+            android:id="@+id/etGAss1"
             android:layout_width="50dp"
             android:layout_height="20dp"
             android:background="@android:color/white"
@@ -182,7 +182,7 @@
             app:layout_constraintStart_toStartOf="@+id/guideline5" />
 
         <EditText
-            android:id="@+id/editText10"
+            android:id="@+id/etGAss2"
             android:layout_width="50dp"
             android:layout_height="20dp"
             android:background="@android:color/white"
@@ -190,10 +190,10 @@
             android:inputType="textPersonName"
             app:layout_constraintBaseline_toBaselineOf="@+id/textView21"
             app:layout_constraintStart_toEndOf="@+id/textView13"
-            app:layout_constraintStart_toStartOf="@+id/editText9" />
+            app:layout_constraintStart_toStartOf="@+id/etGAss1" />
 
         <EditText
-            android:id="@+id/editText11"
+            android:id="@+id/etGAss3"
             android:layout_width="50dp"
             android:layout_height="20dp"
             android:background="@android:color/white"
@@ -201,10 +201,10 @@
             android:inputType="textPersonName"
             app:layout_constraintBaseline_toBaselineOf="@+id/textView22"
             app:layout_constraintStart_toEndOf="@+id/textView14"
-            app:layout_constraintStart_toStartOf="@+id/editText10" />
+            app:layout_constraintStart_toStartOf="@+id/etGAss2" />
 
         <EditText
-            android:id="@+id/editText12"
+            android:id="@+id/etGProj"
             android:layout_width="50dp"
             android:layout_height="20dp"
             android:background="@android:color/white"
@@ -212,10 +212,10 @@
             android:inputType="textPersonName"
             app:layout_constraintBaseline_toBaselineOf="@+id/textView23"
             app:layout_constraintStart_toEndOf="@+id/textView15"
-            app:layout_constraintStart_toStartOf="@+id/editText11" />
+            app:layout_constraintStart_toStartOf="@+id/etGAss3" />
 
         <EditText
-            android:id="@+id/editText13"
+            android:id="@+id/etTAss1"
             android:layout_width="50dp"
             android:layout_height="20dp"
             android:background="@android:color/white"
@@ -227,7 +227,7 @@
             app:layout_constraintStart_toEndOf="@+id/textView20" />
 
         <EditText
-            android:id="@+id/editText14"
+            android:id="@+id/etTAss2"
             android:layout_width="50dp"
             android:layout_height="20dp"
             android:background="@android:color/white"
@@ -239,7 +239,7 @@
             app:layout_constraintStart_toEndOf="@+id/textView21" />
 
         <EditText
-            android:id="@+id/editText15"
+            android:id="@+id/etTAss3"
             android:layout_width="50dp"
             android:layout_height="20dp"
             android:background="@android:color/white"
@@ -251,7 +251,7 @@
             app:layout_constraintStart_toEndOf="@+id/textView22" />
 
         <EditText
-            android:id="@+id/editText16"
+            android:id="@+id/etTProj"
             android:layout_width="50dp"
             android:layout_height="20dp"
             android:background="@android:color/white"
@@ -263,7 +263,7 @@
             app:layout_constraintStart_toEndOf="@+id/textView23" />
 
         <EditText
-            android:id="@+id/editText17"
+            android:id="@+id/etGMid_1"
             android:layout_width="50dp"
             android:layout_height="20dp"
             android:background="@android:color/white"
@@ -271,10 +271,10 @@
             android:inputType="textPersonName"
             app:layout_constraintBaseline_toBaselineOf="@+id/textView24"
             app:layout_constraintStart_toEndOf="@+id/textView17"
-            app:layout_constraintStart_toStartOf="@+id/editText12" />
+            app:layout_constraintStart_toStartOf="@+id/etGProj" />
 
         <EditText
-            android:id="@+id/editText18"
+            android:id="@+id/etTMid_1"
             android:layout_width="50dp"
             android:layout_height="20dp"
             android:background="@android:color/white"
@@ -286,7 +286,7 @@
             app:layout_constraintStart_toEndOf="@+id/textView24" />
 
         <EditText
-            android:id="@+id/editText19"
+            android:id="@+id/etGMid_2"
             android:layout_width="50dp"
             android:layout_height="20dp"
             android:background="@android:color/white"
@@ -294,10 +294,10 @@
             android:inputType="textPersonName"
             app:layout_constraintBaseline_toBaselineOf="@+id/textView25"
             app:layout_constraintStart_toEndOf="@+id/textView18"
-            app:layout_constraintStart_toStartOf="@+id/editText17" />
+            app:layout_constraintStart_toStartOf="@+id/etGMid_1" />
 
         <EditText
-            android:id="@+id/editText20"
+            android:id="@+id/etTMid_2"
             android:layout_width="50dp"
             android:layout_height="20dp"
             android:background="@android:color/white"
@@ -309,7 +309,7 @@
             app:layout_constraintStart_toEndOf="@+id/textView25" />
 
         <EditText
-            android:id="@+id/editText21"
+            android:id="@+id/etGFinal"
             android:layout_width="56dp"
             android:layout_height="21dp"
             android:background="@android:color/white"
@@ -317,10 +317,10 @@
             android:inputType="textPersonName"
             app:layout_constraintBaseline_toBaselineOf="@+id/textView26"
             app:layout_constraintStart_toEndOf="@+id/textView19"
-            app:layout_constraintStart_toStartOf="@+id/editText19" />
+            app:layout_constraintStart_toStartOf="@+id/etGMid_2" />
 
         <EditText
-            android:id="@+id/editText22"
+            android:id="@+id/etTFinal"
             android:layout_width="56dp"
             android:layout_height="21dp"
             android:background="@android:color/white"
@@ -342,7 +342,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editText21" />
+            app:layout_constraintTop_toBottomOf="@+id/etGFinal" />
 
         <android.support.constraint.Guideline
             android:id="@+id/guideline4"
