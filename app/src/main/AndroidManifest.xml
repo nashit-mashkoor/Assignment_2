@@ -5,12 +5,14 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
+        android:label="Flex"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:label="Flex"
         android:theme="@style/AppTheme">
-        <activity android:name=".Weight">
+        <activity android:name=".SemesterLog">
 
+        </activity>
+        <activity android:name=".Weight">
 
         </activity>
         <activity android:name=".Asses">
@@ -20,11 +22,12 @@
 
         </activity>
         <activity android:name=".StudentHome">
-
+            
         </activity>
         <activity android:name=".LogIn">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

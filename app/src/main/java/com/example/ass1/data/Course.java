@@ -39,6 +39,46 @@ public class Course implements Serializable {
     Double aAss3 = -1.0;
     Double tAss1 = -1.0;
 
+    public Course ( Course c)   {
+        this.name=c.name;
+
+        // Weightage
+        this.wFinal = c.wFinal;
+        this.wProject = c.wProject;
+        this.wAssignment = c.wAssignment;
+        this.wMid_1= c.wMid_1;
+        this.wMid_2 = c.wMid_2;
+
+        //Total
+        this.tFinal =c.tFinal;
+        this.tProject=c.tProject;
+        this.tAssignment=c.tAssignment;
+        this.tMid_1=c.tMid_1;
+        this.tMid_2=c.tMid_2;
+
+        //Acquired
+        this.aFinal=c.aFinal;
+        this.aProject=c.aProject;
+        this.aAssignment=c.aAssignment;
+        this.aMid_1=c.aMid_1;
+        this.aMid_2=c.aMid_2;
+
+        //Acquired
+        this.absFinal = c.absFinal;
+        this.absProject = c.absProject;
+        this.absAssignment = c.absAssignment;
+        this.absMid_1 = c.absMid_1;
+        this.absMid_2 = c.absMid_2;
+
+        // Extra
+        this.aAss1 = c.aAss1;
+        this.aAss2 = c.aAss2;
+        this.aAss3 = c.aAss3;
+        this.tAss1 = c.tAss1;
+        this.tAss2 = c.tAss2;
+        this. tAss3 = c.tAss3;
+
+    }
     public void updateAllAssign ()  {
 
         Double acquired = 0.0;
@@ -71,6 +111,10 @@ public class Course implements Serializable {
         }
 
 
+    }
+    public Double getProgress() {
+
+        return wFinal + wProject +wAssignment +wMid_1 +wMid_2 ;
     }
     public Double getaAss1() {
         return aAss1;
@@ -309,7 +353,13 @@ public class Course implements Serializable {
         return aMid_2;
     }
 
+    public Course(String name) {
+        this.name = name;
+    }
+
     public void setaMid_2(Double aMid_2) {
         this.aMid_2 = aMid_2;
     }
+
+
 }

@@ -21,9 +21,10 @@ public class StudentHome extends AppCompatActivity implements View.OnClickListen
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-        Student s;
-        HashMap<String,Student> data;
-        HashSet<String> studentKey;
+        final Student s;
+        final HashMap<String,Student> data;
+        final HashSet<String> studentKey;
+        final String current;
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_student_home);
@@ -40,8 +41,9 @@ public class StudentHome extends AppCompatActivity implements View.OnClickListen
         if(i.hasExtra("current") && i.hasExtra("data") &&  i.hasExtra("studentKey")) {
             Bundle b = i.getExtras();
 
-            data = (HashMap<String , Student>) b.getSerializable("data");;
+            data = (HashMap<String , Student>) b.getSerializable("data");
             studentKey = (HashSet<String>) b.getSerializable("studentKey");
+            current = b.getString("current");
             s = (data.get(b.getString("current")));
 
 
@@ -62,6 +64,22 @@ public class StudentHome extends AppCompatActivity implements View.OnClickListen
                      TextView tvMid_1  = (TextView) findViewById(R.id.tvMid_1);
                      TextView tvMid_2 = (TextView) findViewById(R.id.tvMid_2);
                      TextView tvFinal  = (TextView) findViewById(R.id.tvFinal);
+                     TextView tvCourseName = (TextView) findViewById(R.id.tvCourseName);
+                     tvCourseName.setText(c.getName());
+
+                     findViewById(R.id.btBack).setOnClickListener(new View.OnClickListener() {
+                         @Override
+                         public void onClick(View v) {
+                             Intent j = new Intent(getApplicationContext(), SemesterLog.class);
+
+                             // Transferring data to summary activity
+                             j.putExtra("current", current);
+                             j.putExtra("data", data);
+                             j.putExtra("studentKey", studentKey);
+
+                             startActivity(j);
+                         }
+                     });
 
                      // UPdating the values on gui
                      if(c.getAbsAssignment() != -1.0) {

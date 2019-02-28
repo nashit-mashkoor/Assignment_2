@@ -1,6 +1,7 @@
 package com.example.ass1.data;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 
 public class Student implements Serializable {
 
@@ -10,7 +11,7 @@ public class Student implements Serializable {
     String rollNum;
     String batch;
     Course course;
-
+    ArrayList<Course> allCourse;
     public Course getCourse() {
         return course;
     }
@@ -21,7 +22,18 @@ public class Student implements Serializable {
         this.name = name;
         this.rollNum = rollNum;
         this.batch = batch;
-        this.course = new Course();
+
+        this.course = null;
+        this.allCourse = new ArrayList<>();
+
+    }
+
+    public ArrayList<Course> getAllCourse() {
+        return allCourse;
+    }
+
+    public void setAllCourse(ArrayList<Course> allCourse) {
+        this.allCourse = allCourse;
     }
 
     public void setCourse(Course course) {

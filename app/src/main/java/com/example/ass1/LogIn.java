@@ -20,6 +20,10 @@ public class LogIn extends AppCompatActivity {
      HashMap<String, Student>  data = new HashMap<>();
      String current = null;
     @Override
+    public void onBackPressed() {
+        moveTaskToBack(true);
+    }
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.log_in);
@@ -90,8 +94,8 @@ public class LogIn extends AppCompatActivity {
 
             Student s = data.get(etUser);
             if(s.getPassword().equals(etPass)) {
-                Intent j = new Intent(getApplicationContext(), StudentHome.class);
-
+                //Intent j = new Intent(getApplicationContext(), StudentHome.class);
+                Intent j = new Intent(getApplicationContext(), SemesterLog.class);
 
                 // Transferring data to summary activity
                 j.putExtra("current", current);

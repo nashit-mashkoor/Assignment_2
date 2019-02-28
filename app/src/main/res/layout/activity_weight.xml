@@ -6,91 +6,195 @@
     android:layout_height="match_parent"
     tools:context=".Weight">
 
-    <TextView
-        android:id="@+id/textView44"
-        android:layout_width="395dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:text="Weightages"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView50"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Mid Term 1: "
-        app:layout_constraintBottom_toTopOf="@+id/textView51"
-        app:layout_constraintStart_toStartOf="@+id/textView49"
-        app:layout_constraintTop_toBottomOf="@+id/textView49" />
-
-    <TextView
-        android:id="@+id/textView46"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:text="Final: "
-        app:layout_constraintBottom_toTopOf="@+id/textView49"
-        app:layout_constraintEnd_toStartOf="@+id/etFinal"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView44"
-        app:layout_constraintVertical_chainStyle="spread" />
-
-    <TextView
-        android:id="@+id/textView52"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Assignment:"
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toTopOf="@+id/tvError"
-        app:layout_constraintStart_toStartOf="@+id/textView51"
-        app:layout_constraintTop_toBottomOf="@+id/textView51" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView44"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="Weightages"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Mid Term 1: "
+                app:layout_constraintBottom_toTopOf="@+id/textView51"
+                app:layout_constraintStart_toStartOf="@+id/textView49"
+                app:layout_constraintTop_toBottomOf="@+id/textView49" />
+
+            <TextView
+                android:id="@+id/textView46"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:text="Final: "
+                app:layout_constraintBottom_toTopOf="@+id/textView49"
+                app:layout_constraintEnd_toStartOf="@+id/etFinal"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView44"
+                app:layout_constraintVertical_chainStyle="spread" />
+
+            <TextView
+                android:id="@+id/textView52"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="8dp"
+                android:text="Assignment:"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView51"
+                app:layout_constraintTop_toBottomOf="@+id/textView51" />
+
+            <TextView
+                android:id="@+id/textView51"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Mid Term 2:"
+                app:layout_constraintBottom_toTopOf="@+id/textView52"
+                app:layout_constraintStart_toStartOf="@+id/textView50"
+                app:layout_constraintTop_toBottomOf="@+id/textView50" />
+
+            <TextView
+                android:id="@+id/textView49"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Project: "
+                app:layout_constraintBottom_toTopOf="@+id/textView50"
+                app:layout_constraintStart_toStartOf="@+id/textView46"
+                app:layout_constraintTop_toBottomOf="@+id/textView46" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="115dp" />
+
+            <EditText
+                android:id="@+id/etFinal"
+                android:layout_width="56dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="0"
+                android:textAlignment="center"
+                app:layout_constraintBaseline_toBaselineOf="@+id/textView46"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textView46" />
+
+            <EditText
+                android:id="@+id/etProject"
+                android:layout_width="56dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="0"
+                android:textAlignment="center"
+                app:layout_constraintBaseline_toBaselineOf="@+id/textView49"
+                app:layout_constraintStart_toStartOf="@+id/etFinal" />
+
+            <EditText
+                android:id="@+id/etMid_1"
+                android:layout_width="56dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="0"
+                android:textAlignment="center"
+                app:layout_constraintBaseline_toBaselineOf="@+id/textView50"
+                app:layout_constraintStart_toStartOf="@+id/etProject" />
+
+            <EditText
+                android:id="@+id/etMid_2"
+                android:layout_width="56dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="0"
+                android:textAlignment="center"
+                app:layout_constraintBaseline_toBaselineOf="@+id/textView51"
+                app:layout_constraintStart_toStartOf="@+id/etMid_1" />
+
+            <EditText
+                android:id="@+id/etAss"
+                android:layout_width="56dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="0"
+                android:textAlignment="center"
+                app:layout_constraintBaseline_toBaselineOf="@+id/textView52"
+                app:layout_constraintStart_toStartOf="@+id/etMid_2" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="141dp" />
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
 
     <TextView
         android:id="@+id/tvError"
-        android:layout_width="395dp"
-        android:layout_height="21dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="32dp"
         android:text="Error: The sum of weightages need to equal to 100"
         android:textAlignment="center"
         android:textColor="@color/colorAccent"
         android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/btUpdate"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etAss" />
-
-    <TextView
-        android:id="@+id/textView51"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Mid Term 2:"
-        app:layout_constraintBottom_toTopOf="@+id/textView52"
-        app:layout_constraintStart_toStartOf="@+id/textView50"
-        app:layout_constraintTop_toBottomOf="@+id/textView50" />
-
-    <TextView
-        android:id="@+id/textView49"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Project: "
-        app:layout_constraintBottom_toTopOf="@+id/textView50"
-        app:layout_constraintStart_toStartOf="@+id/textView46"
-        app:layout_constraintTop_toBottomOf="@+id/textView46" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btUpdate"
-        android:layout_width="395dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
@@ -100,81 +204,4 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.511"
         app:layout_constraintStart_toStartOf="parent" />
-
-    <android.support.constraint.Guideline
-        android:id="@+id/guideline6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="115dp" />
-
-    <EditText
-        android:id="@+id/etFinal"
-        android:layout_width="56dp"
-        android:layout_height="18dp"
-        android:layout_marginEnd="8dp"
-        android:background="@android:color/white"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="0"
-        android:textAlignment="center"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView46"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView46" />
-
-    <EditText
-        android:id="@+id/etProject"
-        android:layout_width="56dp"
-        android:layout_height="18dp"
-        android:background="@android:color/white"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="0"
-        android:textAlignment="center"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView49"
-        app:layout_constraintStart_toStartOf="@+id/etFinal" />
-
-    <EditText
-        android:id="@+id/etMid_1"
-        android:layout_width="56dp"
-        android:layout_height="18dp"
-        android:background="@android:color/white"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="0"
-        android:textAlignment="center"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView50"
-        app:layout_constraintStart_toStartOf="@+id/etProject" />
-
-    <EditText
-        android:id="@+id/etMid_2"
-        android:layout_width="56dp"
-        android:layout_height="18dp"
-        android:background="@android:color/white"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="0"
-        android:textAlignment="center"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView51"
-        app:layout_constraintStart_toStartOf="@+id/etMid_1" />
-
-    <EditText
-        android:id="@+id/etAss"
-        android:layout_width="56dp"
-        android:layout_height="18dp"
-        android:background="@android:color/white"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="0"
-        android:textAlignment="center"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView52"
-        app:layout_constraintStart_toStartOf="@+id/etMid_2" />
-
-    <android.support.constraint.Guideline
-        android:id="@+id/guideline7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="141dp" />
 </android.support.constraint.ConstraintLayout>

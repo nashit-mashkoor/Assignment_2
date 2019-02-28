@@ -182,108 +182,142 @@ public class Asses extends AppCompatActivity implements View.OnClickListener {
                     if(t < 0)   {
                         throw new Exception();
                     }
-                    c.setaAss1(t);
-                    c.updateAllAssign();
+                    if(!etTAss1.getText().toString().isEmpty())  {
+                        Double t1 =Double.valueOf(etTAss1.getText().toString()) ;
+                        if(t1 < 0 || t > t1)   {
+                            throw new Exception();
+                        }
+                        c.settAss1(t1);
+                        c.setaAss1(t);
+                        c.updateAllAssign();
+                    }
+                    else {
+                        throw new Exception();
+                    }
+
+
                 }
                 if(!etGAss2.getText().toString().isEmpty())  {
                     Double t =Double.valueOf(etGAss2.getText().toString()) ;
                     if(t < 0)   {
                         throw new Exception();
                     }
-                    c.setaAss2(t);
-                    c.updateAllAssign();
+                    if(!etTAss2.getText().toString().isEmpty())  {
+                        Double t1 = Double.valueOf(etTAss2.getText().toString());
+                        if(t1 < 0 || t>t1)   {
+                            throw new Exception();
+                        }
+                        c.settAss2(t1);
+                        c.setaAss2(t);
+                        c.updateAllAssign();
+                    }
+                    else    {
+                        throw new Exception();
+                    }
+
                 }
                 if(!etGAss3.getText().toString().isEmpty())  {
                     Double t =Double.valueOf(etGAss3.getText().toString()) ;
                     if(t < 0)   {
                         throw new Exception();
                     }
-                    c.setaAss3(t);
-                    c.updateAllAssign();
-                }
-                if(!etTAss1.getText().toString().isEmpty())  {
-                    Double t =Double.valueOf(etTAss1.getText().toString()) ;
-                    if(t < 0)   {
+                    if(!etTAss3.getText().toString().isEmpty())  {
+                        Double t1 = Double.valueOf(etTAss3.getText().toString());
+                        if(t1 < 0 || t > t1)   {
+                            throw new Exception();
+                        }
+                        c.settAss3(t1);
+                        c.setaAss3(t);
+                        c.updateAllAssign();
+                    }
+                    else    {
                         throw new Exception();
                     }
-                    c.settAss1(t);
-                    c.updateAllAssign();
+
+
                 }
-                if(!etTAss2.getText().toString().isEmpty())  {
-                    Double t = Double.valueOf(etTAss2.getText().toString());
-                    if(t < 0)   {
-                        throw new Exception();
-                    }
-                    c.settAss2(t);
-                    c.updateAllAssign();
-                }
-                if(!etTAss3.getText().toString().isEmpty())  {
-                    Double t = Double.valueOf(etTAss3.getText().toString());
-                    if(t < 0)   {
-                        throw new Exception();
-                    }
-                    c.settAss3(t);
-                    c.updateAllAssign();
-                }
+
+
+
 
                 if(!etGProj.getText().toString().isEmpty()) {
                     Double t = Double.valueOf(etGProj.getText().toString());
                     if(t < 0)   {
                         throw new Exception();
                     }
-                    c.setaProject(t);
-                }
-                if(!etTProj.getText().toString().isEmpty()) {
-                    Double t = Double.valueOf(etTProj.getText().toString());
-                    if(t < 0)   {
+                    if(!etTProj.getText().toString().isEmpty()) {
+                        Double t1 = Double.valueOf(etTProj.getText().toString());
+                        if(t1 < 0 || t > t1)   {
+                            throw new Exception();
+                        }
+                        c.settProject(t1);
+                        c.setaProject(t);
+                    }
+                    else {
                         throw new Exception();
                     }
-                    c.settProject(t);
+
                 }
+
 
                 if(!etGMid_1.getText().toString().isEmpty()) {
                     Double t = Double.valueOf(etGMid_1.getText().toString());
                     if(t < 0)   {
                         throw new Exception();
                     }
-                    c.setaMid_1(t);
-                }
-                if(!etTMid_1.getText().toString().isEmpty()) {
-                    Double t = Double.valueOf(etTMid_1.getText().toString());
-                    if(t < 0)   {
+                    if(!etTMid_1.getText().toString().isEmpty()) {
+                        Double t1 = Double.valueOf(etTMid_1.getText().toString());
+                        if(t1 < 0 || t > t1)   {
+                            throw new Exception();
+                        }
+                        c.settMid_1(t1);
+                        c.setaMid_1(t);
+                    }
+                    else {
                         throw new Exception();
                     }
-                    c.settMid_1(t);
+
                 }
+
                 if(!etGMid_2.getText().toString().isEmpty()) {
                     Double t = Double.valueOf(etGMid_2.getText().toString());
                     if(t < 0)   {
                         throw new Exception();
                     }
-                    c.setaMid_2(t);
-                }
-                if(!etTMid_2.getText().toString().isEmpty()) {
-                    Double t = Double.valueOf(etTMid_2.getText().toString());
-                    if(t < 0)   {
+                    if(!etTMid_2.getText().toString().isEmpty()) {
+                        Double t1 = Double.valueOf(etTMid_2.getText().toString());
+                        if(t1 < 0 || t > t1)   {
+                            throw new Exception();
+                        }
+                        c.settMid_2(t1);
+                        c.setaMid_2(t);
+                    }
+                    else {
                         throw new Exception();
                     }
-                    c.settMid_2(t);
+
                 }
+
 
                 if(!etGFinal.getText().toString().isEmpty()) {
                     Double t = Double.valueOf(etGFinal.getText().toString());
                     if(t < 0)   {
                         throw new Exception();
                     }
-                    c.setaFinal(t);
-                }
-                if(!etTFinal.getText().toString().isEmpty()) {
-                    Double t =Double.valueOf(etTFinal.getText().toString());
-                    if(t < 0)   {
+                    if(!etTFinal.getText().toString().isEmpty()) {
+                        Double t1 =Double.valueOf(etTFinal.getText().toString());
+                        if(t1 < 0 || t > t1)   {
+                            throw new Exception();
+                        }
+                        c.settFinal(t1);
+                        c.setaFinal(t);
+                    }
+                    else    {
                         throw new Exception();
                     }
-                    c.settFinal(t);
+
                 }
+
 
             }
             catch (Exception e) {

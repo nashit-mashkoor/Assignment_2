@@ -64,6 +64,8 @@ public class Profile extends AppCompatActivity {
 
 
         // Creating student and adding it to data
+        // The student is being created here
+
         Student s = new Student(etUser,etPass,etName,etRoll,etBatch);
         data.put(etUser,s);
         studentKey.add(etUser);
