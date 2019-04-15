@@ -15,14 +15,15 @@ import android.widget.TextView;
 import com.example.ass1.data.Course;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class CourseAdapter extends RecyclerView.Adapter<CourseAdapter.CourseViewHolder> /*implements Filterable*/ {
 
-    private  ArrayList<Course> mCourseList;
+    private  List<Course> mCourseList;
     private  ArrayList<Course> fCourseList;
     private final LayoutInflater mInflater;
 
-    public CourseAdapter(Context context, ArrayList<Course> mCourseList) {
+    public CourseAdapter(Context context, List<Course> mCourseList) {
 
         this.mCourseList = mCourseList;
         this.fCourseList = new ArrayList<>();
@@ -35,6 +36,20 @@ public class CourseAdapter extends RecyclerView.Adapter<CourseAdapter.CourseView
 
     }
 
+    public void updateData(List<Course> mList)  {
+
+        mCourseList = mList;
+        this.notifyDataSetChanged();
+    }
+    public Course getCourse(int num)    {
+        if(mCourseList != null && mCourseList.size() != 0)  {
+            return mCourseList.get(num);
+        }
+        else {
+            return null;
+        }
+
+    }
 
 
     @NonNull

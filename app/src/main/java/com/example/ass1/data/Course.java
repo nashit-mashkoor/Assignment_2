@@ -1,46 +1,128 @@
 package com.example.ass1.data;
 
+import android.arch.persistence.room.ColumnInfo;
+import android.arch.persistence.room.Entity;
+import android.arch.persistence.room.ForeignKey;
+import android.arch.persistence.room.PrimaryKey;
+import android.support.annotation.NonNull;
+
 import java.io.Serializable;
 
+import static android.arch.persistence.room.ForeignKey.CASCADE;
+
+
+@Entity(foreignKeys = @ForeignKey(entity = Student.class,
+        parentColumns = "username",
+        childColumns = "FuserName",
+        onDelete = ForeignKey.CASCADE,
+        onUpdate = ForeignKey.CASCADE), primaryKeys = {"name","FuserName"})
+
+
 public class Course implements Serializable {
+
+    @ColumnInfo(name = "name")
+    @NonNull
     String name;
 
+    @ColumnInfo(name = "FuserName")
+    @NonNull
+    String FuserName;
+
     // Weightage
+
+    @ColumnInfo(name = "wFinal")
     Double wFinal =  0.0;
+
+    @ColumnInfo(name = "wProject")
     Double wProject = 0.0;
+
+    @ColumnInfo(name = "wAssignment")
     Double wAssignment = 0.0;
+
+    @ColumnInfo(name = "wMid_1")
     Double wMid_1= 0.0;
+
+    @ColumnInfo(name = "wMid_2")
     Double wMid_2 = 0.0;
 
     //Total
+    @ColumnInfo(name = "tFinal")
     Double tFinal =-1.0;
+
+    @ColumnInfo(name = "tProject")
     Double tProject=-1.0;
+
+    @ColumnInfo(name = "tAssignment")
     Double tAssignment=-1.0;
+
+    @ColumnInfo(name = "tMid_1")
     Double tMid_1=-1.0;
+
+    @ColumnInfo(name = "tMid_2")
     Double tMid_2=-1.0;
 
+
     //Acquired
+    @ColumnInfo(name = "aFinal")
     Double aFinal=-1.0;
+
+    @ColumnInfo(name = "aProject")
     Double aProject=-1.0;
+
+    @ColumnInfo(name = "aAssignment")
     Double aAssignment=-1.0;
+
+    @ColumnInfo(name = "aMid_1")
     Double aMid_1=-1.0;
+
+    @ColumnInfo(name = "aMid_2")
     Double aMid_2=-1.0;
 
+
     //Acquired
+    @ColumnInfo(name = "absFinal")
     Double absFinal = -1.0;
+
+    @ColumnInfo(name = "absProject")
     Double absProject = -1.0;
+
+    @ColumnInfo(name = "absAssignment")
     Double absAssignment = -1.0;
+
+    @ColumnInfo(name = "absMid_1")
     Double absMid_1 = -1.0;
+
+    @ColumnInfo(name = "absMid_2")
     Double absMid_2 = -1.0;
 
+
     // Extra
+    @ColumnInfo(name = "aAss1")
     Double aAss1 = -1.0;
+
+    @ColumnInfo(name = "aAss2")
     Double aAss2 = -1.0;
+
+    @ColumnInfo(name = "aAss3")
     Double aAss3 = -1.0;
+
+    @ColumnInfo(name = "tAss1")
     Double tAss1 = -1.0;
+
+    @ColumnInfo(name = "tAss2")
+    Double tAss2 = -1.0;
+
+    @ColumnInfo(name = "tAss3")
+    Double tAss3 = -1.0;
+
+
+
+
 
     public Course ( Course c)   {
         this.name=c.name;
+
+        this.FuserName = c.FuserName;
 
         // Weightage
         this.wFinal = c.wFinal;
@@ -164,8 +246,7 @@ public class Course implements Serializable {
         this.tAss3 = tAss3;
     }
 
-    Double tAss2 = -1.0;
-    Double tAss3 = -1.0;
+
 
     public void calculateAbsolutes ()  {
         if(aFinal != -1.0 && tFinal != -1.0)  {
@@ -353,13 +434,21 @@ public class Course implements Serializable {
         return aMid_2;
     }
 
-    public Course(String name) {
+    public Course(String name, String FuserName) {
         this.name = name;
+        this.FuserName = FuserName;
     }
 
     public void setaMid_2(Double aMid_2) {
         this.aMid_2 = aMid_2;
     }
 
+    @NonNull
+    public String getFuserName() {
+        return FuserName;
+    }
 
+    public void setFuserName(@NonNull String fuserName) {
+        FuserName = fuserName;
+    }
 }

@@ -1,17 +1,41 @@
 package com.example.ass1.data;
 
+import android.arch.persistence.room.ColumnInfo;
+import android.arch.persistence.room.Embedded;
+import android.arch.persistence.room.Entity;
+import android.arch.persistence.room.Ignore;
+import android.arch.persistence.room.PrimaryKey;
+import android.support.annotation.NonNull;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 
+@Entity
 public class Student implements Serializable {
 
+    @PrimaryKey
+    @ColumnInfo(name = "username")
+    @NonNull
     String username;
+
+    @ColumnInfo(name = "password")
     String password;
+
+    @ColumnInfo(name = "name")
     String name;
+
+    @ColumnInfo(name = "rollNum")
     String rollNum;
+
+    @ColumnInfo(name = "batch")
     String batch;
+
+    @Ignore
     Course course;
+
+    @Ignore
     ArrayList<Course> allCourse;
+
     public Course getCourse() {
         return course;
     }
